@@ -1,0 +1,15 @@
+DONE
+Throwing axe (bone small axe)
+Wheellock Rifle
+Otter spear
+Swordfish
+
+TODO
+Bone axe
+Bone club
+Net
+Bone spear
+Bone trident
+Bone club big
+Bone dagger
+Bone saber

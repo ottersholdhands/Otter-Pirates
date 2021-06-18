@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_</defName>
+        <title></title>
+        <titleShort></titleShort>
+        <baseDescription></baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName></defName>
+                <amount></amount>
+            </li>
+        </skillGains>
+        <forcedTraits>
+            <li>
+                <defName></defName>
+                <chance></chance>
+            </li>
+        </forcedTraits>
+        <disallowedTraits>
+            <li>
+                <defName></defName>
+            </li>
+        </disallowedTraits>
+        <requiredWorkTags>
+            <li></li>
+        </requiredWorkTags>
+        <workDisables>
+            <li></li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+Animals
+Artistic
+Caring
+Cleaning
+Commoner
+Cooking
+Crafting
+Firefighting
+Hauling
+Hunting
+Intellectual
+ManualDumb
+ManualSkilled
+Mining
+PlantWork
+Social
+Violent
+
+-->
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Helmsotter</defName>
+        <title>Helmsotter</title>
+        <titleShort>Helmsotter</titleShort>
+        <baseDescription>[PAWN_nameDef] often moves about in the wilderness. Tracking [PAWN_possessive] prey and taming beasts.</baseDescription>
+
+        <slot>Adulthood</slot> 
+        <skillGains>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+		<forcedTraits>
+			<li>
+				<defName>Tough</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraits>
+        <disallowedTraits>
+			<li>
+				<defName>Wimp</defName>
+			</li>
+		</disallowedTraits>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+		<workDisables>
+			<li>PlantWork</li>
+            <li>Animals</li>
+		</workDisables>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Helmsotter2</defName>
+        <title>Helmsotter</title>
+        <titleShort>Nightwatch</titleShort>
+        <baseDescription>[PAWN_nameDef] Prefers the solitary, introspective job of steering the ship, even when [PAWN_possessive] colleagues are asleep. [PAWN_nameDef] spends this time alone thinking about how beautiful the world is.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+            <li>Artistic</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Social</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_GunsOtter</defName>
+        <title>Otter Gunner</title>
+        <titleShort>Gunner</titleShort>
+        <baseDescription>As [PAWN_possessive] ship's main gunner, [PAWN_nameDef] spent a lot of time working on the cannons, and put a lot of energy into being a good shot. Unfortunately this enthusiasm means that [PAWN_nameDef] isn't particularly good with animals.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Crafting</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Carpenter</defName>
+        <title>Carpenter</title>
+        <titleShort>Builder</titleShort>
+        <baseDescription>[PAWN_nameDef] is a shaper of wood, forming raw timber into furniture, buildings, and useful items. [PAWN_nameDef]'s love of wooden things does not extend to stone however.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Crafting</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Crafting</li>
+            <li>ManualSkilled</li>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_EstrangedCaptain</defName>
+        <title>Estranged Captain</title>
+        <titleShort>Captain</titleShort>
+        <baseDescription>[PAWN_nameDef] was the top seadog on [PAWN_possessive] very own pirate ship! [PAWN_nameDef] was a great captain, that is until [PAWN_possessive] first mate led a mutiny against [PAWN_pronoun]. Even after the mutiny failed, [PAWN_nameDef] left out of protest.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Social</li>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Quartermaster</defName>
+        <title>Quartermaster</title>
+        <titleShort>Quartermaster</titleShort>
+        <baseDescription>[PAWN_nameDef] kept track of the stores and wellfare of [PAWN_possessive] ship. [PAWN_pronoun] was strict in making sure that the food was good, the crew kept healthy, and the filthy rats fed to the clams, but only after they had been washed of course.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Cooking</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Cooking</li>
+            <li>Caring</li>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_FirstMate</defName>
+        <title>First Mate</title>
+        <titleShort>Matey</titleShort>
+        <baseDescription>As the second-in-command aboard a clam running vessel, [PAWN_nameDef] led boarding actions, oversaw deck work, and lazed about in the off hours. Upon reflection, the lazing about was probably the best part.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Crafting</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Artistic</li>
+            <li>ManualDumb</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Boatswain</defName>
+        <title>Boatswain</title>
+        <titleShort>Bo'Sun</titleShort>
+        <baseDescription>[PAWN_nameDef] is a Bo'sun, a type of senior deck officer. [PAWN_nameDef]'s main job was making sure the hull was free of barnacles, and directing cleaning operations when such were found. [PAWN_pronoun] also kept a small garden.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Construction</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>4</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>ManualSkilled</li>
+            <li>Crafting</li>
+            <li>PlantWork</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_SecretAgent</defName>
+        <title>Secret Agent</title>
+        <titleShort>Spy</titleShort>
+        <baseDescription>[PAWN_nameDef]! [PAWN_pronoun]'s a semi-aquatic, clam-eating, mammal of action! [PAWN_pronoun]'s a furry little webfoot who'll never flinch from a fra-eeay-eaay! In short, there's a new secret agent in town, and [PAWN_possessive] name is [PAWN_nameDef].</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>5</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Animals</li>
+            <li>PlantWork</li>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Firefighting</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Surgeon</defName>
+        <title>Surgeon</title>
+        <titleShort>Surgeon</titleShort>
+        <baseDescription>After a tragic accident involving a whole bucket of clams being lost, [PAWN_nameDef] swore off fighting and became a doctor. [PAWN_pronoun] took a job as a ship's surgeon to pay for Medicine school.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Medicine</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Animals</li>
+            <li>Intellectual</li>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Violent</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_MovieStar</defName>
+        <title>Celebriotter</title>
+        <titleShort>Star</titleShort>
+        <baseDescription>[PAWN_nameDef] has appeared in many silver screen productions. Drama, action, mystery, nothing is beyond the incredible skills, and cuteness, of "[PAWN_nameDef]". This success has led to [PAWN_nameDef] enjoying a life of luxury.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <disallowedTraits>
+            <li>
+                <defName>Ascetic</defName>
+            </li>
+        </disallowedTraits>
+        <requiredWorkTags>
+            <li>Social</li>
+            <li>Artistic</li>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Voyager</defName>
+        <title>Voyager</title>
+        <titleShort>Explorer</titleShort>
+        <baseDescription>[PAWN_nameDef] has travelled across the world and seen many interesting things in [PAWN_possessive] time. [PAWN_nameDef] loves sharing [PAWN_possessive] knowledge with other otters.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+            <li>Crafting</li>
+            <li>PlantWork</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Deckhand</defName>
+        <title>Deckhand</title>
+        <titleShort>Decker</titleShort>
+        <baseDescription>[PAWN_nameDef] is a deckhand, pure and simple. [PAWN_pronoun] likes to punch bad guys, eat clams, hold hands and relax when the work is done. Anything more complicated then that isn't really neccesary.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>4</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Social</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>ManualSkilled</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Mercenary</defName>
+        <title>Mercenary</title>
+        <titleShort>Merc</titleShort>
+        <baseDescription>After a bad clam left [PAWN_nameDef] stuck on shore while his friends continued their voyage, a group of mercenaries offered [PAWN_pronoun] a spot in their company. [PAWN_nameDef] improved [PAWN_possessive] fighting skills, and learned first aid as well.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-1</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_OtterEngineer</defName>
+        <title>Engineer</title>
+        <titleShort>Engineer</titleShort>
+        <baseDescription>Sometimes a group of Otters get their hands on a more advanced craft, in those cases, a more skilled Otter is needed to help maintain them. [PAWN_nameDef] is one of those otters. [PAWN_pronoun]'s worked on all sorts of stage machines, but [PAWN_pronoun] always figures out how to get them working.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Crafting</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Crafting</li>
+            <li>ManualSkilled</li>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Violent</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Fisherotter</defName>
+        <title>Fisherotter</title>
+        <titleShort>Fisher</titleShort>
+        <baseDescription>[PAWN_nameDef] loves fishing. [PAWN_possessive] favorite passtime is going out onto the water, casting out [PAWN_possessive] nets, and thinking about how deep the sea is. When he's done [PAWN_pronoun]'ll dive into the water and search for different kinds of seaweed. The only downside to this lifestyle is that other otters sometimes forgets [PAWN_nameDef]'s around because of how long [PAWN_pronoun] spends at sea.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Animals</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Animals</li>
+            <li>PlantWork</li>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Clothier</defName>
+        <title>Seam-Ripper</title>
+        <titleShort>Clothier</titleShort>
+        <baseDescription>[PAWN_nameDef]'s job was that of a clothes and sails maker. Somtimes [PAWN_pronoun] made plain looking clothes, sometimes colorful, fancy clothes. In any case, other otters were always pleased with [PAWN_possessive] work.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Crafting</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>-1</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Crafting</li>
+            <li>Artistic</li>
+            <li>PlantWork</li>
+        </requiredWorkTags>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Armorer</defName>
+        <title>Armorer</title>
+        <titleShort>Armorer</titleShort>
+        <baseDescription>Like [PAWN_nameDef]'s father before [PAWN_possessive], [PAWN_nameDef] was an armorer. [PAWN_pronoun] gathered materials from deep within the earth, then brought it out and made fine protective gear. An accident with hot iron and an angry customer made [PAWN_nameDef] decide that fighting was counterproductive, however.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Crafting</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Crafting</li>
+            <li>Artistic</li>
+            <li>Mining</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Violent</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Shipwright</defName>
+        <title>Shipwright</title>
+        <titleShort>Shipsmith</titleShort>
+        <baseDescription>If you need a ship built, [PAWN_nameDef] is your otter! [PAWN_pronoun] knows all the tricks to making a piece of wood float, and most of the tricks for making it go places. What [PAWN_nameDef] doesn't have is a liking for kelp or seaweed. Far too many ships have been caught in the briney deep for those treacherous plants to be trusted.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Construction</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>-4</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>ManualSkilled</li>
+            <li>Intellectual</li>
+            <li>Social</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Emancipator</defName>
+        <title>Slave-Freer</title>
+        <titleShort>Emancipator</titleShort>
+        <baseDescription>Otter slavary is a sad reality on the Rim, but [PAWN_nameDef] has spent a great deal of time fighting it. Not all pirates are bad after all. [PAWN_nameDef] always tries to help those in need.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>-4</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Intellectual</li>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Morooned</defName>
+        <title>Morooned</title>
+        <titleShort>Exiled</titleShort>
+        <baseDescription>Sometimes signing on with human pirates isn't the best idea. [PAWN_nameDef] got voted off the ship the last time [PAWN_pronoun] tried that. At least it was a good learning experience, and the island was full of tasty foods, so it was actually pretty fun!</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Crafting</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>4</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Crafting</li>
+            <li>PlantWork</li>
+            <li>Caring</li>
+            <li>Cooking</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Social</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Adulthood_Ottlander</defName>
+        <title>Ottlander</title>
+        <titleShort>Ottlander</titleShort>
+        <baseDescription>Living as one of the only otters in a mostly human town was an odd experience, but a good one all told. [PAWN_nameDef] learned a lot about farming for one. But what [PAWN_pronoun] leaned best is that life is best with other otters.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Plants</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>PlantWork</li>
+            <li>Animals</li>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>OtterAdult</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+</Defs>

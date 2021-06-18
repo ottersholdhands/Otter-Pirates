@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Research Tabs -->
+
+  <ResearchProjectDef Name="OtterKnowledgeResearch" Abstract="True">
+    <techLevel>Medieval</techLevel>
+    <tab>OtterReTab</tab>
+  </ResearchProjectDef>
+    <ResearchTabDef>
+    <defName>OtterReTab</defName>
+    <label>Otter</label>
+  </ResearchTabDef>
+
+  
+    <ResearchProjectDef>
+    <defName>OtterStart</defName>
+    <label>Otter research</label>
+    <description>Start the journey into otter tech.</description>
+    <baseCost>50</baseCost>
+      <techLevel>Medieval</techLevel>
+      <tab>OtterReTab</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+      <prerequisites>
+        <li>Smithing</li>
+        <li>ComplexClothing</li>
+      </prerequisites>
+  </ResearchProjectDef>
+
+    <ResearchProjectDef>
+    <defName>OtterClothing</defName>
+    <label>Cloth gear</label>
+    <description>Low tier otter gear. Hood, tunic and cloth.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>OtterReTab</tab>
+    <prerequisites>
+      <li>OtterStart</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+    <ResearchProjectDef>
+    <defName>OtterWeapons</defName>
+    <label>Otter Weapons</label>
+    <description>Low tier otter weapons.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>OtterReTab</tab>
+    <prerequisites>
+      <li>OtterStart</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+</Defs>

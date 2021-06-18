@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+ <ThingDef Name="ApparelMakeableBaseOtter" ParentName="ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="ArmorSmithableBaseOtter" ParentName="ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- Hats-->
+  <!--desc by Gonegaming -->
+  <ThingDef ParentName="ApparelMakeableBaseOtter">
+    <defName>Apparel_PirateEyepatch</defName>
+    <label>Eyepatch</label>
+    <description>Eyepatches, while not strictly neccessary, are very stylish, and certainly piratical. It is not uncommon for an Otter to have several eyepatches in varying styles.</description>
+     <techLevel>Medieval</techLevel>
+         <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>OtterClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Item/Apparel/Otterhats/OtterPiratepatch</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.8, 0.8)</drawSize>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <thingCategories>
+        <li>Headgear</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>800</WorkToMake>
+      <Mass>0.5</Mass>
+      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>.5</EquipDelay>
+    </statBases>
+     <equippedStatOffsets>
+     <SocialImpact>0.05</SocialImpact>
+     <ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+     </equippedStatOffsets>
+     <apparel>
+     <bodyPartGroups>
+         <li>UpperHead</li>
+      </bodyPartGroups>
+      <useWornGraphicMask>True</useWornGraphicMask>
+      <wornGraphicPath>Things/Item/Apparel/Otterhats/OtterPiratepatch</wornGraphicPath>
+     <layers>
+       <li>Overhead</li>
+      </layers>
+      <tags Inherit="False">
+        <li>OtterPirate</li>
+        <li>MedievalMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>OtterOutfit</li>
+      </defaultOutfitTags>
+      </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBaseOtter">
+    <defName>Apparel_PirateBandana</defName>
+    <label>Pirate Bandana</label>
+    <description>The Pirate's Bandana accomplishes both utility and style for otters. Not simply a fashion statement, this bandana is an excellent place to hide a spare pebble or two.</description>
+     <techLevel>Medieval</techLevel>
+         <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>OtterClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Item/Apparel/Otterhats/PirateBandana</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.8, 0.8)</drawSize>
+      <drawOffset>(0,0.9,0)</drawOffset>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <thingCategories>
+        <li>Headgear</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>800</WorkToMake>
+      <Mass>0.5</Mass>
+      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>.5</EquipDelay>
+    </statBases>
+     <equippedStatOffsets>
+      <MoveSpeed>0.15</MoveSpeed>
+     </equippedStatOffsets>
+     <apparel>
+   <bodyPartGroups>
+         <li>UpperHead</li>
+      </bodyPartGroups>
+      <useWornGraphicMask>True</useWornGraphicMask>
+      <wornGraphicPath>Things/Item/Apparel/Otterhats/PirateBandana</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags Inherit="False">
+        <li>OtterPirate</li>
+        <li>MedievalMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>OtterOutfit</li>
+      </defaultOutfitTags>
+      </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBaseOtter">
+    <defName>Apparel_PirateTricone</defName>
+    <label>Pirate Tricone</label>
+    <description>The Pirate's Tricorne hat is iconic among Otters. Signifying strength and unity among their crews, the wearer of this hat gains immense social prowess.</description>
+    <techLevel>Medieval</techLevel>
+         <recipeMaker>
+      <recipeUsers Inherit="False">
+       <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>OtterClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Item/Apparel/Otterhats/PirateTricone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <thingCategories>
+       <li>Headgear</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>800</WorkToMake>
+      <Mass>0.5</Mass>
+      <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>.5</EquipDelay>
+    </statBases>
+  
+     <equippedStatOffsets>
+     <PainShockThreshold>0.10</PainShockThreshold>
+     <SocialImpact>0.10</SocialImpact>
+     </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+         <li>FullHead</li>
+      </bodyPartGroups>
+      <useWornGraphicMask>True</useWornGraphicMask>
+      <wornGraphicPath>Things/Item/Apparel/Otterhats/PirateTricone</wornGraphicPath>
+     <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags Inherit="False">
+        <li>OtterPirate</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>OtterOutfit</li>
+      </defaultOutfitTags>
+     </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+ <!-- Coats Otter-->
+    <ThingDef ParentName="ApparelMakeableBaseOtter">
+    <defName>Apparel_PirateCoat</defName>
+    <label>Otter Pirate Coat</label>
+    <description>The Pirate coat offers a stain resistant platform for high ranking otter pirates to crack either shells on their bellies, or skulls on the beach.</description>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+     <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+     </recipeUsers>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>OtterClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Item/Apparel/Ottercoats/PirateCoat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1600</WorkToMake>
+      <Mass>3</Mass>
+      <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.9</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.35</SocialImpact>
+      <PsychicSensitivity>-0.15</PsychicSensitivity>
+      <PainShockThreshold>0.10</PainShockThreshold>
+      </equippedStatOffsets>
+    <apparel>
+        <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <useWornGraphicMask>True</useWornGraphicMask>
+      <wornGraphicPath>Things/Item/Apparel/Ottercoats/PirateCoat</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags Inherit="False">
+        <li>OtterPirate</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>OtterOutfit</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef> 
+
+  <!-- Shirts Otter-->
+     <ThingDef ParentName="ApparelMakeableBaseOtter">
+    <defName>Apparel_PirateShirt</defName>
+    <label>Otter Pirate Shirt</label>
+    <description>Pirate shirts are the basis of any otter pirate wardrobe. They're simple, reasonably durable, and easy to clean.</description>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>OtterClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Item/Apparel/Ottershirts/PirateShirt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>800</WorkToMake>
+      <Mass>1</Mass>
+      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>.5</EquipDelay>
+    </statBases>
+     <equippedStatOffsets>
+     <MoveSpeed>0.2</MoveSpeed>
+     <SocialImpact>0.15</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+         <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <useWornGraphicMask>True</useWornGraphicMask>
+      <wornGraphicPath>Things/Item/Apparel/Ottershirts/PirateShirt</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags Inherit="False">
+        <li>SeaOtterPirate</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>OtterOutfit</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef> 
+
+
+  </Defs>

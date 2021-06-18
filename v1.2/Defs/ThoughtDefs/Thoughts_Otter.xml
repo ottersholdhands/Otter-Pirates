@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--<ThoughtDef>
+    <defName>Otters_AteFish</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <stages>
+        <li>
+            <label>ate fish</label>
+            <description>Tasty, succulent fish!</description>
+            <baseMoodEffect>3</baseMoodEffect>
+        </li>
+    </stages>
+  </ThoughtDef> -->
+
+  <ThoughtDef>
+    <defName>OtterSharedBed</defName>
+    <thoughtClass>Thought_SharedBed</thoughtClass>
+    <workerClass>ThoughtWorker_SharedBed</workerClass>
+    <stages>
+      <li>
+        <label>sharing bed</label>
+        <description>It's warmer together</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef> 
+
+ <ThoughtDef>
+    <defName>OtterNuzzled</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>nuzzled</label>
+        <description>Let me nuzzle you back!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>OtterSleepDisturbed</defName>
+    <icon>Things/Mote/ThoughtSymbol/SleepZ</icon>
+    <showBubble>true</showBubble>
+    <durationDays>1</durationDays>
+    <stackLimit>2</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>disturbed sleep</label>
+        <description>I was disturbed during sleep by otters moving around nearby. A private room would solve this.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>OtterSleptOutside</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>slept outside</label>
+        <description>I had to sleep outdoors but my fur protects me from the elements.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>OtterSleptInCold</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>slept in the cold</label>
+        <description>I slept in the cold. Its nice to have thick fur.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>OtterAteWithoutTable</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>ate without table</label>
+        <description>Time to eat a meal off the my tummy.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>OtterNaked</defName>
+    <workerClass>ThoughtWorker_PsychologicallyNude</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Nudist</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>naked</label>
+        <description>I'm naked. This is is how it should be.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>OtterGotMarried</defName>
+    <durationDays>30.0</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>got married to {0}</label>
+        <description>I got married! May we hold hands together forever!</description>
+        <baseMoodEffect>50</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>OtterAttendedWedding</defName>
+    <durationDays>10.0</durationDays>
+    <stackLimit>10</stackLimit>
+    <stages>
+      <li>
+        <label>attended wedding</label>
+        <description>It was great to see two otters come together to build a future like that.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>OtterAttendedParty</defName>
+    <durationDays>10</durationDays>
+    <stackLimit>10</stackLimit>
+    <stages>
+      <li>
+        <label>attended party</label>
+        <description>Otter PARTY!</description>
+        <baseMoodEffect>9</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <ThoughtDef>
+    <defName>OtterNewColonyOptimism</defName>
+    <durationDays>8</durationDays>
+    <nextThought>NewColonyHope</nextThought>
+    <stages>
+      <li>
+        <label>initial optimism</label>
+        <description>It's a tough situation, but I'm excited to be founding a new crew.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>OtterNewColonyHope</defName>
+    <durationDays>8</durationDays>
+    <stages>
+      <li>
+        <label>initial hope</label>
+        <description>I'm getting used to this, but it's still an exciting new situation. I hope this works out...</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <ThoughtDef>
+    <defName>OtterWasImprisoned</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>was imprisoned</label>
+        <description>You'll regret this.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>OtterKnowBuriedInSarcophagus</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>10</stackLimit>
+    <stages>
+      <li>
+        <label>buried in sarcophagus</label>
+        <description>They will be remembered forever.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <ThoughtDef>
+    <defName>OtterKindWordsMood</defName>
+    <durationDays>2</durationDays>
+    <stackLimit>10</stackLimit>
+    <stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>kind words</label>
+        <description>Hearing you say that makes me feel fluffy!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+    <ThoughtDef>
+    <defName>OtterSoakingWet</defName>
+    <durationDays>0.1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>soaking wet</label>
+        <description> I love the water!</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!--=================== executions and prisoner deaths ===================-->
+   <ThoughtDef>
+    <defName>OtterKnowColonistDied</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>5</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>colonist died</label>
+        <description>May they float in the great sky ocean and catch the biggest fish.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+
+</Defs>

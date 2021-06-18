@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<PawnKindDef Name="OtterFactionBase" Abstract="True">
+    <race>Otter</race>
+    <defaultFactionType>OtterPlayer</defaultFactionType>
+    <backstoryCategories>
+      <li>OtterAdult</li>
+      <li>OtterChild</li>
+    </backstoryCategories>
+    <maxGenerationAge>50</maxGenerationAge>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <invNutrition>4</invNutrition>
+    <invFoodDef>Pemmican</invFoodDef>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <combatPower>25</combatPower>
+    
+  </PawnKindDef>
+
+<PawnKindDef ParentName="OtterFactionBase">
+  <defName>OtterSea</defName>
+    <label>Otter Sea</label>
+    <race>Alien_Sea</race>
+    <combatPower>25</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.8~1.8</gearHealthRange>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <invNutrition>1</invNutrition>
+    <itemQuality>Normal</itemQuality>
+   <apparelMoney>
+     <min>900</min>
+     <max>1000</max>
+    </apparelMoney>
+    <weaponMoney>
+     <min>900</min>
+     <max>1000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>OtterMelee_Basic</li>
+      <li>OtterRanged_Gun</li>
+      <li>OtterRanged_Basic</li>
+    </weaponTags>
+     <apparelTags>
+      <li>OtterPirate</li>
+    </apparelTags>
+    <techHediffsMoney>
+      <min>150</min>
+      <max>150</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.15</techHediffsChance>
+    <factionLeader>true</factionLeader>
+    <apparelRequired>
+    </apparelRequired>  
+    <backstoryCategories>
+      <li>OtterAdult</li>
+      <li>OtterChild</li>
+    </backstoryCategories>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="OtterFactionBase">
+    <defName>OtterRiver</defName>
+    <label>Otter River</label>
+    <race>Alien_River</race>
+      <combatPower>45</combatPower>
+      <trader>true</trader>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <chemicalAddictionChance>0.04</chemicalAddictionChance>
+    <invNutrition>1</invNutrition>
+    <itemQuality>Normal</itemQuality>
+    <apparelMoney>
+     <min>900</min>
+     <max>1000</max>
+    </apparelMoney>
+     <weaponMoney>
+      <min>900</min>
+      <max>1000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>OtterMelee_Basic</li>
+      <li>OtterRanged_Gun</li>
+      <li>OtterRanged_Basic</li>
+    </weaponTags>
+      <apparelTags>
+      <li>OtterPirate</li>
+    </apparelTags>
+    <techHediffsMoney>
+      <min>150</min>
+      <max>150</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.15</techHediffsChance>
+    <backstoryCategories>
+      <li>OtterAdult</li>
+      <li>OtterChild</li>
+    </backstoryCategories>
+  </PawnKindDef>
+  
+</Defs>
