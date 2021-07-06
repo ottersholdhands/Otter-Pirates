@@ -19,6 +19,10 @@
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
     </recipeMaker>
   </ThingDef>
 
@@ -54,6 +58,8 @@
     <recipeMaker>
       <recipeUsers>
         <li>CraftingSpot</li>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
       </recipeUsers>
     </recipeMaker>
     <verbs>
@@ -82,7 +88,7 @@
     <defName>Throwing_Axe_Projectile</defName>
     <label>axe</label>
     <graphicData>
-      <texPath>Things/Projectile/bone_smallaxe</texPath>
+      <texPath>Things/Projectile/Coral_smallaxe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -189,7 +195,7 @@
     <graphicData>
       <texPath>Things/Item/Weapon/Guns/SharkRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(.05,.05)</drawSize>
+      <drawSize>(.9,.9)</drawSize>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <soundInteract>Interact_Revolver</soundInteract>
@@ -214,7 +220,6 @@
       <recipeUsers>
         <li>ElectricSmithy</li>
         <li>FueledSmithy</li>
-        <li>CraftingSpot</li>
       </recipeUsers>
       <skillRequirements>
         <Crafting>3</Crafting>
@@ -277,7 +282,7 @@
     <graphicData>
       <texPath>Things/Item/Weapon/Guns/SharkPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(.3,.3)</drawSize>
+      <drawSize>(.9,.9)</drawSize>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <soundInteract>Interact_Revolver</soundInteract>
@@ -297,12 +302,11 @@
     <weaponTags>
       <li>OtterRanged_Gun</li>
     </weaponTags>
-    <equippedAngleOffset>45</equippedAngleOffset>
+    <equippedAngleOffset>0</equippedAngleOffset>
     <recipeMaker>
       <recipeUsers>
         <li>ElectricSmithy</li>
         <li>FueledSmithy</li>
-        <li>CraftingSpot</li>
       </recipeUsers>
       <skillRequirements>
         <Crafting>3</Crafting>
@@ -365,7 +369,7 @@
     <label>Otter AXE</label>
     <description>A AXE Yar Har!</description>
     <graphicData>
-      <texPath>Things/Item/Weapon/Axe/bone_axe</texPath>
+      <texPath>Things/Item/Weapon/Axe/Coral_axe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(.8,.8)</drawSize>
@@ -444,7 +448,7 @@
     <label>Otter Spear</label>
     <description>A bardiche, often wielded by the fearsome Otter pirates. Yar Har!</description>
     <graphicData>
-      <texPath>Things/Item/Weapon/Spears/bone_spear</texPath>
+      <texPath>Things/Item/Weapon/Spears/Coral_spear</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(1,1)</drawSize>
@@ -549,7 +553,7 @@
     <label>Otter Trident</label>
     <description>A Trident, often wielded by the fearsome Otter pirates. Yar Har!</description>
     <graphicData>
-      <texPath>Things/Item/Weapon/Spears/bone_trident</texPath>
+      <texPath>Things/Item/Weapon/Spears/Coral_trident</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(1,1)</drawSize>
@@ -634,11 +638,11 @@
   
 <!-- Club -->
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
-    <defName>OtterMelee_boneclub</defName>
-    <label>Bone Club</label>
-    <description>The bone club</description>
+    <defName>OtterMelee_Coralclub</defName>
+    <label>Coral Club</label>
+    <description>The Coral club</description>
     <graphicData>
-      <texPath>Things/Item/Weapon/Club/bone_club</texPath>
+      <texPath>Things/Item/Weapon/Club/Coral_club</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(.7,.7)</drawSize>
@@ -697,11 +701,11 @@
 
   
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
-    <defName>OtterMelee_boneclubBig</defName>
-    <label>Bone Club big</label>
-    <description>The bone club Big</description>
+    <defName>OtterMelee_CoralclubBig</defName>
+    <label>Coral Club big</label>
+    <description>The Coral club Big</description>
     <graphicData>
-      <texPath>Things/Item/Weapon/Club/bone_club_big</texPath>
+      <texPath>Things/Item/Weapon/Club/Coral_club_big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(.5,.5)</drawSize>
@@ -763,7 +767,7 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
     <defName>OtterMelee_Swordfish</defName>
-    <label>swordfish</label>
+    <label>Otter Swordfish</label>
     <description>The swordfish is the weapon of choice for otters across the seven seas. Its barbed tip and strong shaft offer excellent combat utility (and if it ever breaks, a nice snack)</description>
     <graphicData>
       <texPath>Things/Item/Weapon/Swords/Swordfish</texPath>
@@ -823,11 +827,11 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
-    <defName>OtterMelee_bonedagger</defName>
-    <label>Bone Dagger</label>
-    <description>The bone dagger</description>
+    <defName>OtterMelee_Coraldagger</defName>
+    <label>Coral Dagger</label>
+    <description>The Coral dagger</description>
     <graphicData>
-      <texPath>Things/Item/Weapon/Swords/bone_dagger</texPath>
+      <texPath>Things/Item/Weapon/Swords/Coral_dagger</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(.8,.8)</drawSize>
@@ -886,11 +890,11 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
-    <defName>OtterMelee_bonesaber</defName>
-    <label>Bone Saber</label>
-    <description>The bone saber</description>
+    <defName>OtterMelee_Coralsaber</defName>
+    <label>Coral Saber</label>
+    <description>The Coral saber</description>
     <graphicData>
-      <texPath>Things/Item/Weapon/Swords/bone_saber</texPath>
+      <texPath>Things/Item/Weapon/Swords/Coral_saber</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(.8,.8)</drawSize>
@@ -948,11 +952,11 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
-    <defName>OtterMelee_bonesword</defName>
-    <label>Bone Sword</label>
-    <description>The bone sword</description>
+    <defName>OtterMelee_Coralsword</defName>
+    <label>Coral Sword</label>
+    <description>The Coral sword</description>
     <graphicData>
-      <texPath>Things/Item/Weapon/Swords/bone_sword</texPath>
+      <texPath>Things/Item/Weapon/Swords/Coral_sword</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(.7,.7)</drawSize>
@@ -1095,7 +1099,7 @@
     <label>Net</label>
     <description>A large net</description>
     <graphicData>
-      <texPath>Things/Item/Weapon/Net/throwing_net</texPath>
+      <texPath>Things/Item/Weapon/Net/Throwing_net</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>

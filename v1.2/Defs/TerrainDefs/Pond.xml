@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Lake -->
+	
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>Pond</defName>
+		<label>lake</label>
+		<description>A cool way to stay wet.</description>
+		<designationCategory>Floors</designationCategory>
+		<renderPrecedence>395</renderPrecedence>
+		<passability>Standable</passability>
+		<texturePath>Terrain/Surfaces/WaterShallowRamp</texturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+		<driesTo>Soil</driesTo>
+		<statBases>
+			<Beauty>2</Beauty>
+			<WorkToBuild>256</WorkToBuild>
+		</statBases>
+		<generatedFilth></generatedFilth>
+		<traversedThought>SoakingWet</traversedThought>
+		<affordances>
+				<li>Light</li>
+				<li>Medium</li>
+				<li>Heavy</li>
+				<li>GrowSoil</li>
+				<li>Diggable</li>
+		<!-- <li>BiomesCore_FreshWater_Bridgeable</li> -->
+		</affordances>
+		<filthAcceptanceMask>
+			<li>None</li>
+		  </filthAcceptanceMask>
+	</TerrainDef>
+
+
+	<!-- Lake -->
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>Removepond</defName>
+		<label>soil</label>
+		<description>Turn shallow water into soil.</description>
+		<designationCategory>Floors</designationCategory>
+		<texturePath>Terrain/Surfaces/Soil</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>340</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <Cleanliness>-1</Cleanliness>
+		  <WorkToBuild>256</WorkToBuild>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1.0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>dirt</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>DirtInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+		<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+	  </TerrainDef>
+	
+
+
+<!-- Filth -->
+	  <ThingDef ParentName="BaseFilth">
+		<defName>Otter_Filth_Water</defName>
+		<label> Pond water puddle</label>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<graphicData>
+		  <texPath>Things/Filth/PoolSoft</texPath>
+		  <color>(120, 146, 185, 180)</color>
+		  <drawSize>2</drawSize>
+		</graphicData>
+		<filth>
+		  <disappearsInDays>0.1~0.2</disappearsInDays>
+		  <cleaningWorkToReduceThickness>5</cleaningWorkToReduceThickness>
+		  <canFilthAttach>false</canFilthAttach>
+		  <allowsFire>false</allowsFire>
+		  <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	  </ThingDef>
+</Defs>

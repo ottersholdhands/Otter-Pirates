@@ -14,7 +14,8 @@
     <invFoodDef>Pemmican</invFoodDef>
     <forceNormalGearQuality>true</forceNormalGearQuality>
     <combatPower>25</combatPower>
-    
+    <initialWillRange>10~20</initialWillRange>
+    <initialResistanceRange>10~16</initialResistanceRange>
   </PawnKindDef>
 
 <PawnKindDef ParentName="OtterFactionBase">
@@ -58,6 +59,8 @@
       <li>OtterAdult</li>
       <li>OtterChild</li>
     </backstoryCategories>
+    <initialWillRange>10~20</initialWillRange>
+    <initialResistanceRange>10~16</initialResistanceRange>
   </PawnKindDef>
 
 
@@ -100,6 +103,8 @@
       <li>OtterAdult</li>
       <li>OtterChild</li>
     </backstoryCategories>
+    <initialWillRange>10~20</initialWillRange>
+    <initialResistanceRange>10~16</initialResistanceRange>
   </PawnKindDef>
   
 </Defs>

@@ -1,15 +1,15 @@
 DONE
-Throwing axe (bone small axe)
+Throwing axe (Coral small axe)
 Wheellock Rifle
 Otter spear
 Swordfish
 
 TODO
-Bone axe
-Bone club
+Coral axe
+Coral club
 Net
-Bone spear
-Bone trident
-Bone club big
-Bone dagger
-Bone saber
+Coral spear
+Coral trident
+Coral club big
+Coral dagger
+Coral saber

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>HydroponicsCoral</defName>
+        <label>hydroponics basin</label>
+        <description>A nutrient bath for growing Coral.</description>
+        <thingClass>OtterPirates.Building_PlantGrowerNoPower</thingClass>
+        <graphicData>
+        <texPath>Things/Coral/CoralHydroBase</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawRotated>false</drawRotated>
+          <drawSize>(2,2)</drawSize>
+          <damageData>
+            <cornerTL>Damage/Corner</cornerTL>
+            <cornerTR>Damage/Corner</cornerTR>
+            <cornerBL>Damage/Corner</cornerBL>
+            <cornerBR>Damage/Corner</cornerBR>
+          </damageData>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <castEdgeShadows>false</castEdgeShadows>
+        <altitudeLayer>LowPlant</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>30</pathCost>
+        <constructEffect>ConstructMetal</constructEffect>
+        <fillPercent>0.30</fillPercent>
+        <canOverlapZones>false</canOverlapZones>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <statBases>
+          <WorkToBuild>2800</WorkToBuild>
+          <MaxHitPoints>180</MaxHitPoints>
+          <Flammability>0.5</Flammability>
+          <Cleanliness>1</Cleanliness>
+        </statBases>
+        <size>(2,2</size>
+        <costList>
+          <Steel>100</Steel>
+          <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <fertility>2.8</fertility>
+        <building>
+          <defaultPlantToGrow>Otter_CoralPlant</defaultPlantToGrow>
+          <sowTag>Otterponics</sowTag>
+          <buildingTags>
+            <li>Production</li>
+          </buildingTags>
+        </building>
+        <tickerType>Rare</tickerType>
+        <comps>
+          <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <researchPrerequisites>
+          <li>Hydroponics</li>
+        </researchPrerequisites>
+        <designationCategory>Production</designationCategory>
+        <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+      </ThingDef>
+  
+</Defs>

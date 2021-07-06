@@ -292,7 +292,6 @@
     <!-- ================ Race ========================== -->
       
       <race>
-            <nameGenerator>NamerPersonTribal</nameGenerator>
             <thinkTreeMain>Humanlike</thinkTreeMain>
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
             <intelligence>Humanlike</intelligence>

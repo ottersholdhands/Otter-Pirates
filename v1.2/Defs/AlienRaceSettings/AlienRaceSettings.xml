@@ -11,7 +11,7 @@
                 <li>OtterRiver</li> 
                 <li>OtterSea</li>
               </kindDefs>
-              <chance>100.0</chance>
+              <chance>20.0</chance>
             </li>
           </pawnKindEntries>
           <factionDefs>
