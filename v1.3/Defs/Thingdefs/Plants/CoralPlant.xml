@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>Otter_CoralPlant</defName>
+		<label>Coral</label>
+		<description>A short, fast-growing crop that yields small edible grains. Its great nutritional ouput and ease of cultivation has made it the economic core of many great civilizations. While rice grows quickly, it is sensitive to soil fertility and will not fare well in poor soil.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		</statBases>
+		<graphicData>
+		  <texPath>Things/Coral/CoralPlant</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+		  </ingestible>
+		<plant>
+			<neverBlightable>true</neverBlightable>
+			<harvestedThingDef>Otter_CoralResource</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+			<sowMinSkill>8</sowMinSkill>
+			<growDays>12</growDays>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<wildOrder>2</wildOrder>
+		  <sowTags>
+			<li>Otterponics</li>
+			<li>Decorative</li>
+		  </sowTags>
+		  <visualSizeRange>1.2~1.5</visualSizeRange>
+		  <growMinGlow>0.1</growMinGlow>
+		  <wildClusterRadius>9</wildClusterRadius>
+		  <wildClusterWeight>10</wildClusterWeight>
+		  <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		  <purpose>Misc</purpose>
+		</plant>
+		<altitudeLayer>Item</altitudeLayer>
+	  </ThingDef>
+	
+	  <!-- <harvestedThingDef>Otter_CoralResource</harvestedThingDef> -->
+	  <!-- Cultivated plants  -->
+	  <!-- <ThingDef ParentName="Otter_PlantDef">
+		<defName>Otter_Coral_Plant</defName>
+		<label>steel coral</label>
+		<description>Fungi have always had a remarkable ability to draw iron up from the ground. The Steel Shroom Tree, however, takes this beyond its logical extreme. Over time this fungal mass produces toadstool like growths, the waste byproduct of the fungi consuming mass amounts of iron for energy. Created on Urbworlds to help meet their ever growing need for steel by fugative Glitterworld scientists, in rare cases they have run wild, eventually overrunning the planet. Without sufficient metal readily accessible this is not a threat.</description>
+		<graphicData>
+			<texPath>Things/Plant/Coralresource</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<plant>
+		  <neverBlightable>true</neverBlightable>
+		  <harvestedThingDef>Steel</harvestedThingDef>
+		  <harvestYield>16</harvestYield>
+		  <sowMinSkill>8</sowMinSkill>
+		  <growDays>12</growDays>
+		  <fertilitySensitivity>1</fertilitySensitivity>
+		  <wildOrder>2</wildOrder>
+		  <purpose>Misc</purpose>
+	   <sowResearchPrerequisites>
+			
+		  </sowResearchPrerequisites>
+		</plant>
+	  </ThingDef>
+
+	  <ThingDef Name="VG_ResourceBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>75</stackLimit>
+			<statBases>
+				<Beauty>-4</Beauty>
+			</statBases>
+			<comps>
+				<li Class="CompProperties_Forbiddable"/>
+			</comps>
+			<alwaysHaulable>true</alwaysHaulable>
+			<drawGUIOverlay>true</drawGUIOverlay>
+			<rotatable>false</rotatable>
+			<pathCost>15</pathCost>
+		</ThingDef>
+	  
+	  
+	
+	  <ThingDef Name="Otter_PlantBase" Abstract="True">
+		<category>Plant</category>
+		<thingClass>Plant</thingClass>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+		  <Flammability>1</Flammability>
+		</statBases>
+		<tickerType>Long</tickerType>
+		<selectable>False</selectable>
+		<neverMultiSelect>True</neverMultiSelect>
+		<drawerType>MapMeshOnly</drawerType>
+		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+		<graphicData>
+				<graphicClass>Graphic_Single</graphicClass>
+				<shaderType>CutoutPlant</shaderType>
+		</graphicData>
+		<ingestible>
+		  <foodType>Plant</foodType>
+		  <preferability>RawBad</preferability>
+			</ingestible>
+		<plant>
+				<fertilityMin>0.7</fertilityMin>
+				<fertilitySensitivity>1.0</fertilitySensitivity>
+		  <soundHarvesting>Harvest_Standard</soundHarvesting>
+		  <soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
+		  <sowWork>280</sowWork>
+		  <harvestWork>180</harvestWork>
+		  <visualSizeRange>0.3~1.0</visualSizeRange>
+		  <topWindExposure>0.1</topWindExposure>
+		</plant>
+	  </ThingDef>
+
+	  <ThingDef ParentName="Otter_PlantBase" Name="Otter_PlantDef" Abstract="True">
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>1</Beauty>
+		  <Nutrition>0.20</Nutrition>
+		</statBases>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<plant>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <harvestTag>Standard</harvestTag>
+		  <sowTags>
+			<li>Otterponic</li>
+		  </sowTags>
+		</plant>
+	  </ThingDef> -->
+
+	</Defs>

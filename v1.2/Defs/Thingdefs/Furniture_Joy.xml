@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="Otter_JoyBuildingBase" ParentName="BuildingBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<blockLight>false</blockLight>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<rotatable>true</rotatable>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.0</fillPercent>
+		<passability>PassThroughOnly</passability>
+		<pathCost>0</pathCost>
+		<castEdgeShadows>false</castEdgeShadows>
+		<clearBuildingArea>false</clearBuildingArea>
+		<useHitPoints>true</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+		</placeWorkers>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		
+	</ThingDef>
+
+	<!-- <ThingDef Name="D9AJO_JoyTableBase" ParentName="FurnitureBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsJoy</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<JoyGainFactor>1</JoyGainFactor>
+		</statBases>    
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<size>(1,1)</size>
+		<pathCost>70</pathCost>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+	</ThingDef> -->
+
+
+	<!-- ========================== Joy Tables ============================== -->
+
+
+
+	<!-- ========================== Furniture ============================== -->
+
+
+
+	<ThingDef ParentName="Otter_JoyBuildingBase">
+		<defName>Otter_HoopBall</defName>
+		<label>Hoop Ball</label>
+		<description>A game about accuracy Hoop Ball</description>
+		<graphicData>
+			<texPath>Things/Building/basket</texPath>
+		</graphicData>
+		<uiIconPath>Things/Building/basket</uiIconPath>
+		<size>(1,1)</size>
+		<thingCategories>
+			<li>BuildingsJoy</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<WorkToBuild>250</WorkToBuild>
+			<Mass>2</Mass>
+			<Beauty>2</Beauty>
+			<Flammability>1.0</Flammability>
+			<JoyGainFactor>1</JoyGainFactor>
+		</statBases>
+		<costList>
+			<WoodLog>15</WoodLog>
+			<Steel>5</Steel>
+			<Cloth>5</Cloth>
+		</costList>
+		<building>
+			<joyKind>Gaming_Dexterity</joyKind>
+			<watchBuildingStandDistanceRange>
+				<min>5</min>
+				<max>5</max>
+			</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>3</watchBuildingStandRectWidth>
+		</building>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+		  </placeWorkers>
+		  <designationCategory>Joy</designationCategory>
+		  <designationHotKey>Misc1</designationHotKey>
+	</ThingDef>
+
+</Defs>

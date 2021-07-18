@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="BallBase" ParentName="MoteBase" Abstract="True">
+		<altitudeLayer>Projectile</altitudeLayer>
+		<mote>
+      <collide>true</collide>
+      <solidTime>2.0</solidTime>
+      <fadeOutTime>0.01</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BallBase">
+		<defName>Otter_Mote_RedBall</defName>
+		<graphicData>
+			<texPath>Things/Motes/redball</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BallBase">
+		<defName>Otter_Mote_GreenBall</defName>
+		<graphicData>
+			<texPath>Things/Motes/greenball</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BallBase">
+		<defName>Otter_Mote_BlueBall</defName>
+		<graphicData>
+			<texPath>Things/Motes/blueball</texPath>
+		</graphicData>
+	</ThingDef>
+
+</Defs>

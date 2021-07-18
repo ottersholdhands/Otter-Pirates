@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_</defName>
+        <title></title>
+        <titleShort></titleShort>
+        <baseDescription></baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName></defName>
+                <amount></amount>
+            </li>
+        </skillGains>
+        <forcedTraits>
+            <li>
+                <defName></defName>
+                <chance></chance>
+            </li>
+        </forcedTraits>
+        <disallowedTraits>
+            <li>
+                <defName></defName>
+            </li>
+        </disallowedTraits>
+        <requiredWorkTags>
+            <li></li>
+        </requiredWorkTags>
+        <workDisables>
+            <li></li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+Animals
+Artistic
+Caring
+Cleaning
+Commoner
+Cooking
+Crafting
+Firefighting
+Hauling
+Hunting
+Intellectual
+ManualDumb
+ManualSkilled
+Mining
+PlantWork
+Social
+Violent
+
+
+-->
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_CabinPup</defName>
+        <title>Cabin Pup</title>
+        <titleShort>Pup</titleShort>
+        <baseDescription>[PAWN_nameDef] often moves about in the wilderness. Tracking [PAWN_possessive] prey and taming beasts.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+				<defName>Cooking</defName>
+				<amount>2</amount>
+			</li>
+            <li>
+				<defName>Mining</defName>
+				<amount>-1</amount>
+			</li>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+        <requiredWorkTags>                     
+            <li>Social</li>
+            <li>Cooking</li>
+        </requiredWorkTags>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_Scullion</defName>
+        <title>Scullion</title>
+        <titleShort>Scullion</titleShort>
+        <baseDescription>[PAWN_nameDef] often moves about in the wilderness. Tracking [PAWN_possessive] prey and taming beasts.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+				<defName>Cooking</defName>
+				<amount>3</amount>
+			</li>
+            <li>
+				<defName>Medicine</defName>
+				<amount>1</amount>
+			</li>
+            <li>
+                <defName>Plants</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+        <requiredWorkTags>
+            <li>Caring</li>
+            <li>Cooking</li>
+        </requiredWorkTags>
+    </AlienRace.BackstoryDef>
+
+        <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_CircusAnimal</defName>
+        <title>Circus Animal</title>
+        <titleShort>Circus Animal</titleShort>
+        <baseDescription>[PAWN_nameDef] often moves about in the wilderness. Tracking [PAWN_possessive] prey and taming beasts.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+				<defName>Artistic</defName>
+				<amount>3</amount>
+			</li>
+            <li>
+				<defName>Medicine</defName>
+				<amount>1</amount>
+			</li>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <!--li> You had two social skill gains so I commented this one out c:
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li-->
+        </skillGains>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+        <forcedTraits>
+			<li>
+				<defName>Nimble</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraits>
+        <requiredWorkTags>
+            <li>Artistic</li>
+            <li>Caring</li>
+        </requiredWorkTags>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_CabinPup2</defName>
+        <title>Servant</title>
+        <titleShort>Servant</titleShort>
+        <baseDescription>[PAWN_nameDef] was the personal servant of a certain "Dread Pirate Tuco", [PAWN_pronoun] was promoted after [PAWN_pronoun] helped fight off a boarding action by aggressive clams.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Medicine</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Caring</li>
+        </requiredWorkTags>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_Scullion2</defName>
+        <title>Scullion</title>
+        <titleShort>Scullion</titleShort>
+        <baseDescription>As a galley assistant, [PAWN_nameDef] spent a lot of time cleaning and fetching. More than enough for one lifetime in [PAWN_possessive] opinion.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Cooking</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Cooking</li>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_CircusAnimal2</defName>
+        <title>Captive</title>
+        <titleShort>Captive</titleShort>
+        <baseDescription>Captured at an early age, [PAWN_nameDef] was taught to be obdeient and entertaining, and pleased many crowds of imperial citizens during [PAWN_possessive] tenure. [PAWN_nameDef] made [PAWN_possessive] grand escape in the finale of one of [PAWN_possessive] shows.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Artistic</li>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Violent</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_MarbleChampion</defName>
+        <title>Marble Champiom</title>
+        <titleShort>Champ</titleShort>
+        <baseDescription>Nobody shoots marbles better than [PAWN_nameDef], it's a proven fact! [PAWN_pronoun] were, and still are, the coolest pup on the block.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Social</li>
+        </requiredWorkTags>
+        <!--workDisables>
+            <li></li> Not sure if it's possible to disable specifically tailoring, so I just commented this part out for now.
+        </workDisables-->
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_SurgeonsPup</defName>
+        <title>Assistant</title>
+        <titleShort>Assistant</titleShort>
+        <baseDescription>[PAWN_nameDef] was a dutiful assistant to the ship's surgeon, cleaning wounds and diagnosing illnesses. That is until a boarding party set [PAWN_nameDef]'s ship on fire. The memory of that haunts [PAWN_nameDef] to this very day.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Medicine</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <disallowedTraits>
+            <li>
+                <defName>Pyromaniac</defName>
+            </li>
+        </disallowedTraits>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+            <li>Caring</li>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Firefighting</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_Orphan</defName>
+        <title>Orphan</title>
+        <titleShort>Orphan</titleShort>
+        <baseDescription>[PAWN_nameDef] never knew [PAWN_possessive] parents. Instead, [PAWN_nameDef] was raised by [PAWN_possessive] village's elder, who taught [PAWN_pronoun] the ways of peace.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Social</li>
+            <li>Cooking</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Violent</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_WreckSurvivor</defName>
+        <title>Survivor</title>
+        <titleShort>Survivor</titleShort>
+        <baseDescription>[PAWN_nameDef]'s ship crashed near a mining village when [PAWN_pronoun] was travelling to visit [PAWN_possessive] grandotters. [PAWN_pronoun] spent the next several years working to get enough money to sail again.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Mining</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-1</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Mining</li>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Artistic</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_DockPup</defName>
+        <title>Dock Pup</title>
+        <titleShort>Pup</titleShort>
+        <baseDescription>[PAWN_nameDef] grew up on the docks, sketching the workers and ships, playing with [PAWN_possessive] friends, and shirking [PAWN_possessive] work. </baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>-1</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Social</li>
+            <li>Artistic</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_ClamFinder</defName>
+        <title>Clam Finder</title>
+        <titleShort>Finder</titleShort>
+        <baseDescription>[PAWN_nameDef] was the best clam finder in the crew. Of course, this ability led to [PAWN_pronoun] getting out of work frequently. This led to [PAWN_nameDef] developing an impressive ego.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Cooking</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Cooking</li>
+            <li>Animals</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_PearlDiver</defName>
+        <title>Pearl Diver</title>
+        <titleShort>Diver</titleShort>
+        <baseDescription>[PAWN_nameDef] was always the quiet, focused, type. [PAWN_pronoun] spent a lot of time deep underwater, finding pearls for necklaces.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Artistic</li>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Social</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_ColonyPup</defName>
+        <title>Colony Pup</title>
+        <titleShort>Colonist</titleShort>
+        <baseDescription>[PAWN_nameDef] lived an easy life in a mostly human colony. [PAWN_pronoun] was assigned to building the underground defenses and rarely saw action during raids.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Construction</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>ManualSkilled</li>
+            <li>Mining</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_OttlanderPup</defName>
+        <title>Ott-lander Pup</title>
+        <titleShort>Ott-lander</titleShort>
+        <baseDescription>As part of a student exhange program, [PAWN_nameDef] was accepted into a bustling town of Outlanders. [PAWN_pronoun] left when the new mayor was revealed to be a former clam crusher.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Cooking</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Cooking</li>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_Adopted</defName>
+        <title>Adopted</title>
+        <titleShort>Adopted</titleShort>
+        <baseDescription>After getting lost at sea one day, [PAWN_nameDef] was adopted by a pair of elderly buccaneers, now sailing for pleasure. [PAWN_nameDef] was taught how to work a plantation and cared for the couple until their deaths.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Plants</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Caring</li>
+            <li>PlantWork</li>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_ExoticPet</defName>
+        <title>Exotic Pet</title>
+        <titleShort>Pet</titleShort>
+        <baseDescription>As the pet of an Imperial Princess, [PAWN_nameDef] experienced much humiliation, but eventually escaped. Still, the experience did not leave [PAWN_pronoun] unchanged, and [PAWN_nameDef] still prefers the company of regular animals to other Otters.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Animals</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <!--forcedTraits> Could be a good idea.
+            <defName>Xenophobe</defName>
+            <chance>50</chance>
+        </forcedTraits-->
+        <workDisables>
+            <li>Social</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_Starfarer</defName>
+        <title>Starfarer</title>
+        <titleShort>Starfarer</titleShort>
+        <baseDescription>[PAWN_nameDef] spent [PAWN_possessive] early life on a spaceship, marvelling at, and learning about, the wonders of the cosmos. As all cleaning and carrying was done by robots, [PAWN_nameDef] never learned how.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+            <li>Social</li>
+            <li>PlantWork</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef> -->
+
+    <!-- <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_Hydrophobe</defName>
+        <title>Hydrophobe</title>
+        <titleShort>Hydrophobe</titleShort>
+        <baseDescription>From an early age [PAWN_nameDef] was always hesitant to approach water. Instead [PAWN_pronoun] was always the first to volunteer when new buildings needed to be built. To this day [PAWN_nameDef] is considered weird by other Otters.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>ManualSkilled</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Firefighting</li>
+            <li>Social</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef> I have no idea how to do the "No Relaxing in Water" thingy from the .txt -->
+
+    <!-- <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_FastSwimmer</defName>
+        <title>Science Experiment</title>
+        <titleShort>Experiment</titleShort>
+        <baseDescription>[PAWN_nameDef] escaped a cruel science experiment with the help of [PAWN_possessive] excellent swimming skills and a fair amount of digging.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>4</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+            <li>Mining</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Artistic</li>
+            <li>Caring</li>
+        </workDisables>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef> -->
+
+    <AlienRace.BackstoryDef>
+        <defName>Otter_Childhood_CrabHunter</defName>
+        <title>Crab Hunter</title>
+        <titleShort>Hunter</titleShort>
+        <baseDescription>[PAWN_nameDef] spent [PAWN_pronoun] childhood hunting river bottoms for crabs and other crustaceans. Getting pinched was common, so [PAWN_nameDef] learned how to deal with minor injuries.</baseDescription>
+        
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Animals</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>-1</amount>
+            </li>
+        </skillGains>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Animals</li>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>OtterChild</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+</Defs>

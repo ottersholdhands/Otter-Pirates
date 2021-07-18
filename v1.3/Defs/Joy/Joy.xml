@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Hoop Ball -->
+	<JoyGiverDef>
+		<defName>Otter_PlayBall</defName>
+		<giverClass>JoyGiver_WatchBuilding</giverClass>
+		<baseChance>2.3</baseChance>
+		<thingDefs>
+			<li>Otter_HoopBall</li>
+		</thingDefs>
+		<jobDef>Otter_PlayBall</jobDef>
+		<desireSit>false</desireSit>
+		<joyKind>Gaming_Dexterity</joyKind>
+		<requiredCapacities>
+			<li>Sight</li>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+	
+	<JobDef>
+		<defName>Otter_PlayBall</defName>
+		<driverClass>OtterPirates.JobDriver_Hoop</driverClass>
+		<reportString>Playing Hoop Ball.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>3</joyMaxParticipants>
+		<joyGainRate>1</joyGainRate>
+		<joySkill>Shooting</joySkill>
+		<joyXpPerTick>0.005</joyXpPerTick>
+		<joyKind>Gaming_Dexterity</joyKind>
+	</JobDef>
+
+</Defs>

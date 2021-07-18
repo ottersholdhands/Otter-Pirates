@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <FactionDef ParentName="PlayerFactionBase">
+        <defName>OtterPlayer</defName>
+        <label>Otter colony</label>
+        <description>A colony of Otters.</description>
+        <isPlayer>true</isPlayer>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>OtterAdult</li>
+                    <li>OtterChild</li>
+                    </categories>
+            </li>
+        </backstoryFilters>
+        <factionIconPath>Things/World/Otter</factionIconPath>
+        <settlementTexturePath>World/WorldObjects/Expanding/Town</settlementTexturePath>
+        <colorSpectrum>
+            <li>(0, 0.737, 0.847)</li>
+        </colorSpectrum>
+        <techLevel>Medieval</techLevel>
+        <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+        <factionNameMaker>NamerFactionPirate</factionNameMaker>
+        <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+        <basicMemberKind>OtterSea</basicMemberKind>
+        <allowedCultures>
+            <li>Corunan</li>
+          </allowedCultures>
+          <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+          </disallowedMemes>
+          <disallowedPrecepts>
+
+          </disallowedPrecepts>
+        <apparelStuffFilter>
+            <thingDefs>
+              <li>Cloth</li>
+            </thingDefs>
+          </apparelStuffFilter>
+        <recipePrerequisiteTags>
+            <li>Tribal</li>
+        </recipePrerequisiteTags>
+        <forageabilityFactor>1.7</forageabilityFactor>
+    </FactionDef>
+</Defs>

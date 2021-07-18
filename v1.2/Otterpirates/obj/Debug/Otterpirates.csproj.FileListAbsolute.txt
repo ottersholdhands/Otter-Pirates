@@ -1,0 +1,12 @@
+D:\My mods\Otter MODS\OtterMod\Otterpirates\bin\Debug\Otterpirates.dll
+D:\My mods\Otter MODS\OtterMod\Otterpirates\bin\Debug\Otterpirates.pdb
+D:\My mods\Otter MODS\OtterMod\Otterpirates\obj\Debug\Otterpirates.csprojAssemblyReference.cache
+D:\My mods\Otter MODS\OtterMod\Otterpirates\obj\Debug\Otterpirates.csproj.CoreCompileInputs.cache
+D:\My mods\Otter MODS\OtterMod\Otterpirates\obj\Debug\Otterpirates.dll
+D:\My mods\Otter MODS\OtterMod\Otterpirates\obj\Debug\Otterpirates.pdb
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\OtterMod\Otterpirates\bin\Debug\OtterPirates.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\OtterMod\Otterpirates\bin\Debug\OtterPirates.pdb
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\OtterMod\Otterpirates\obj\Debug\OtterPirates.csprojAssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\OtterMod\Otterpirates\obj\Debug\OtterPirates.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\OtterMod\Otterpirates\obj\Debug\OtterPirates.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\OtterMod\Otterpirates\obj\Debug\OtterPirates.pdb

@@ -8,7 +8,7 @@
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has been stunned to death.</deathMessage>
     <defaultDamage>20</defaultDamage>
-    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionCellMote>Mote_BlastDry</explosionCellMote>
     <soundExplosion>Explosion_Stun</soundExplosion>
     <combatLogRules>Damage_Stun</combatLogRules>
     <isRanged>true</isRanged>

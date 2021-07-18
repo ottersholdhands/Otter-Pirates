@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+        <defName>Alien_River</defName>
+        <label>Otter River</label>
+        <description>Otter River</description>
+    <alienRace>
+      <generalSettings>
+        <minAgeForAdulthood>18</minAgeForAdulthood>
+        <maxDamageForSocialfight>3</maxDamageForSocialfight>
+        <immuneToXenophobia>true</immuneToXenophobia>
+        <maleGenderProbability>0.5</maleGenderProbability>
+        <immuneToAge>true</immuneToAge>
+        <humanRecipeImport>true</humanRecipeImport>
+        <forcedRaceTraitEntries>
+        
+        </forcedRaceTraitEntries>
+        
+		<disallowedTraits>
+				<li>
+					<defName>DislikesMen</defName>
+				</li>
+				<li>
+					<defName>DislikesWomen</defName>
+				</li>
+    </disallowedTraits>  
+        <factionRelations>
+
+        </factionRelations>
+        <canLayDown>true</canLayDown>
+
+        <!-- ================ Part Generator ========================== -->
+
+        <alienPartGenerator>
+          <headOffset>(0, 0.05)</headOffset>
+        	<customHeadDrawSize>(.85, .85)</customHeadDrawSize>
+          <!-- <customDrawSize>(.85, .85)</customDrawSize>-->
+			  	<customPortraitDrawSize>(.9, .9)</customPortraitDrawSize>
+					<customPortraitHeadDrawSize>(.9, .9)</customPortraitHeadDrawSize>
+          <aliencrowntypes>
+            <li>Average_Normal</li>
+          </aliencrowntypes>
+          <alienbodytypes>
+            <li>Thin</li>
+          </alienbodytypes>
+
+          <!-- <useGenderedHeads>false</useGenderedHeads> -->
+          <!-- <useGenderedBodies>false</useGenderedBodies>   -->
+          <bodyAddons>
+             <li>
+              <drawnInBed>false</drawnInBed>
+			      	<path>Things/Pawn/Otter/River/Tail/rivertail</path>
+                <bodyPart>tail</bodyPart>
+                <drawSize>1.0</drawSize>
+                <shaderType>CutoutComplex</shaderType>
+                <colorChannel>skin</colorChannel>
+                <inFrontOfBody>false</inFrontOfBody>
+        	<offsets>
+								<south>
+									<bodyTypes>
+                    <Thin>(0,0</Thin>
+										<Female>(0,0)</Female>
+                    <Male>(0,0)</Male>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+                  <Thin>(-0.008572308,0.1200425)</Thin>
+									<Female>(-0.008572308,0.1586285)</Female>
+                    <Male>(-0.008572308,0.1586285)</Male>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+                  <Thin>(-0.1886374,-0.1243304)</Thin>
+										<Female>(-0.1886374,-0.1243304)</Female>
+                    <Male>(-0.1886374,-0.1243304)</Male>
+									</bodyTypes>
+								</east>
+							</offsets>
+				</li> 
+          </bodyAddons>
+          <colorChannels>
+            <li>
+              <name>skin</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(161,115,77,255)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(161,115,77,255)</only>
+                  </li>
+
+                   <li>
+                    <weight>10</weight>
+                    <only>RGBA(134,96,65,255)</only>
+                  </li>
+       
+                </options>
+              </first>
+              <second Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(255,255,255,255)</only>
+                  </li>
+                   <li>
+                    <weight>5</weight>
+                    <only>RGBA(95,67,46,255)</only>
+                  </li>
+                   <li>
+                    <weight>5</weight>
+                    <only>RGBA(181,178,175,255)</only>
+                  </li>
+                   <li>
+                    <weight>5</weight>
+                    <only>RGBA(205,175,151,255)</only>
+                  </li>
+ 
+                </options>
+              </second>
+            </li>
+          </colorChannels>
+        </alienPartGenerator>
+      </generalSettings>
+
+      <!-- ================ Graphic Path & Hair ========================== -->
+
+      <graphicPaths>
+        <li>
+          <head>Things/Pawn/Otter/River/Heads/</head>
+          <body>Things/Pawn/Otter/River/Bodies/</body>
+          <skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
+
+        </li>
+      </graphicPaths>
+
+      <hairSettings>
+        <hasHair>false</hasHair>
+        <getsGreyAt>100</getsGreyAt>
+      </hairSettings>
+
+<!-- ================ Thoughts ========================== -->
+   <thoughtSettings>
+        <replacerList>
+          <li>
+            <original>Nuzzled</original>
+            <replacer>OtterNuzzled</replacer>
+          </li>
+          <li>
+            <original>KnowColonistDied</original>
+            <replacer>OtterKnowColonistDied</replacer>
+          </li>
+
+          <li>
+            <original>SleepDisturbed</original>
+            <replacer>OtterSleepDisturbed</replacer>
+          </li>
+           <li>
+            <original>SleptOutside</original>
+            <replacer>OtterSleptOutside</replacer>
+          </li>
+           <li>
+            <original>SleptInCold</original>
+            <replacer>OtterSleptInCold</replacer>
+          </li>
+           <li>
+            <original>SleptInCold</original>
+            <replacer>OtterSleptInCold</replacer>
+          </li>
+           <li>
+            <original>AteWithoutTable</original>
+            <replacer>OtterAteWithoutTable</replacer>
+          </li>
+           <li>
+            <original>Naked</original>
+            <replacer>OtterNaked</replacer>
+          </li>
+           <li>
+            <original>GotMarried</original>
+            <replacer>OtterGotMarried</replacer>
+          </li>
+           <li>
+            <original>AttendedWedding</original>
+            <replacer>OtterAttendedWedding</replacer>
+          </li>
+          <li>
+            <original>AttendedParty</original>
+            <replacer>OtterAttendedParty</replacer>
+          </li>
+          <li>
+            <original>NewColonyOptimism</original>
+            <replacer>OtterNewColonyOptimism</replacer>
+          </li>
+          <li>
+            <original>NewColonyHope</original>
+            <replacer>OtterNewColonyHope</replacer>
+          </li>
+          <li>
+            <original>KnowBuriedInSarcophagus</original>
+            <replacer>OtterKnowBuriedInSarcophagus</replacer>
+          </li>
+          <li>
+            <original>WasImprisoned</original>
+            <replacer>OtterWasImprisoned</replacer>
+          </li>
+          <li>
+            <original>KindWordsMood</original>
+            <replacer>OtterKindWordsMood</replacer>
+          </li>
+          <li>
+            <original>KnowColonistDied</original>
+            <replacer>OtterKnowColonistDied</replacer>
+          </li>
+           <li>
+            <original>SharedBed</original>
+            <replacer>OtterSharedBed</replacer>
+          </li> 
+          
+        </replacerList>
+        
+       <restrictedThoughts>
+       <!-- <li>Otters_AteFish</li>-->
+       </restrictedThoughts>
+
+        <cannotReceiveThoughts>
+          <li>AteRawFood</li>
+          <li>SoakingWet</li>
+        </cannotReceiveThoughts>
+      </thoughtSettings>
+    </alienRace>
+
+    <!-- ================ Stats ========================== -->
+    
+        <statBases>
+           <MarketValue>1750</MarketValue>
+           <MoveSpeed>5</MoveSpeed>
+           <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+           <ComfyTemperatureMax>26</ComfyTemperatureMax>
+           <LeatherAmount>20</LeatherAmount>
+         <!-- <SwimSpeed>3.5</SwimSpeed>-->
+        </statBases>
+
+    <!-- ================ Tools ========================== -->
+    
+		<tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>12.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.15</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+
+    <!-- ================ Race ========================== -->
+      
+      <race>
+            <thinkTreeMain>Humanlike</thinkTreeMain>
+            <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+            <intelligence>Humanlike</intelligence>
+            <makesFootprints>true</makesFootprints>
+            <lifeExpectancy>90</lifeExpectancy>
+            <nameCategory>HumanStandard</nameCategory>
+            <leatherDef>Leather_Panthera</leatherDef>
+            <body>OtterRiver</body>
+            <baseBodySize>1.0</baseBodySize>
+            <baseHealthScale>1.0</baseHealthScale>
+            <foodType>OmnivoreHuman</foodType>
+            <meatMarketValue>1</meatMarketValue>
+            <manhunterOnDamageChance>0.5</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
+        <gestationPeriodDays>45</gestationPeriodDays>
+        <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.01, 0.02)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>HumanlikeToddler</def>
+          <minAge>1.1</minAge>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>2</minAge>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>13</minAge>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>18</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(14,0)</li>
+          <li>(16,100)</li>
+          <li>(50,100)</li>
+          <li>(60,30)</li>
+          <li>(70,5)</li>
+          <li>(80,1)</li>
+          <li>(90,1)</li>
+          <li>(100,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+        <li>Human</li>
+      </hediffGiverSets>
+       </race>
+    <recipes>
+      <li>InstallArchotechEye</li>
+      <li>InstallArchotechArm</li>
+      <li>InstallArchotechLeg</li>
+      <li>InstallPowerClaw</li>
+      <li>InstallBionicEye</li>
+      <li>InstallBionicArm</li>
+      <li>InstallBionicLeg</li>
+      <li>InstallBionicSpine</li>
+      <li>InstallBionicHeart</li>
+      <li>InstallBionicStomach</li>
+      <li>InstallBionicEar</li>
+      <li>InstallSimpleProstheticArm</li>
+      <li>InstallSimpleProstheticLeg</li>
+      <li>InstallSimpleProstheticHeart</li>
+      <li>InstallCochlearImplant</li>
+      <li>InstallPegLeg</li>
+      <li>InstallWoodenFoot</li>
+      <li>InstallDenture</li>
+      <li>InstallJoywire</li>
+      <li>InstallPainstopper</li>
+      <li>InstallNaturalHeart</li>
+      <li>InstallNaturalLung</li>
+      <li>InstallNaturalKidney</li>
+      <li>InstallNaturalLiver</li>
+      <li>ExciseCarcinoma</li>
+      <li>AdministerMechSerumHealer</li>
+      <li>RemoveBodyPart</li>
+      <li>Euthanize</li>
+      <li>Anesthetize</li>
+    </recipes>
+  </AlienRace.ThingDef_AlienRace>
+</Defs>
