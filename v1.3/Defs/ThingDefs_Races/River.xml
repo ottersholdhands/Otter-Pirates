@@ -48,7 +48,7 @@
           <!-- <useGenderedHeads>false</useGenderedHeads> -->
           <!-- <useGenderedBodies>false</useGenderedBodies>   -->
           <bodyAddons>
-             <li>
+            <li>
               <drawnInBed>false</drawnInBed>
 			      	<path>Things/Pawn/Otter/River/Tail/rivertail</path>
                 <bodyPart>tail</bodyPart>
@@ -56,30 +56,25 @@
                 <shaderType>CutoutComplex</shaderType>
                 <colorChannel>skin</colorChannel>
                 <inFrontOfBody>false</inFrontOfBody>
-        	<offsets>
-								<south>
-									<bodyTypes>
-                    <Thin>(0,0</Thin>
-										<Female>(0,0)</Female>
-                    <Male>(0,0)</Male>
-									</bodyTypes>
-								</south>
-								<north>
-									<bodyTypes>
-                  <Thin>(-0.008572308,0.1200425)</Thin>
-									<Female>(-0.008572308,0.1586285)</Female>
-                    <Male>(-0.008572308,0.1586285)</Male>
-									</bodyTypes>
-								</north>
-								<east>
-									<bodyTypes>
-                  <Thin>(-0.1886374,-0.1243304)</Thin>
-										<Female>(-0.1886374,-0.1243304)</Female>
-                    <Male>(-0.1886374,-0.1243304)</Male>
-									</bodyTypes>
-								</east>
-							</offsets>
-				</li> 
+                <defaultOffset>Tail</defaultOffset>
+	            	<offsets>
+                  <south>
+                    <bodyTypes>
+                      <Thin>(0,0)</Thin>
+                    </bodyTypes>
+                  </south>
+                  <north>
+                    <bodyTypes>
+                      <Thin>(0,0.04608841)</Thin>
+                    </bodyTypes>
+                  </north>
+                  <east>
+                    <bodyTypes>
+                      <Thin>(-0.09539069,-0.192926)</Thin>
+                    </bodyTypes>
+                  </east>
+                </offsets>
+			      </li> 
           </bodyAddons>
           <colorChannels>
             <li>
@@ -139,10 +134,26 @@
         </li>
       </graphicPaths>
 
-      <hairSettings>
-        <hasHair>false</hasHair>
-        <getsGreyAt>100</getsGreyAt>
-      </hairSettings>
+      <styleSettings>
+        <li>
+            <key>BeardDef</key>
+            <value>
+              <hasStyle>true</hasStyle>
+                <styleTags>
+                    <li>BeardRural</li>
+                </styleTags>
+            </value>
+        </li>
+        <li>
+            <key>HairDef</key>
+            <value>
+                <hasStyle>false</hasStyle>
+                <styleTags>
+                    <li>NoHair</li>
+                </styleTags>
+            </value>
+        </li>
+    </styleSettings>
 
 <!-- ================ Thoughts ========================== -->
    <thoughtSettings>
@@ -314,7 +325,7 @@
             <makesFootprints>true</makesFootprints>
             <lifeExpectancy>90</lifeExpectancy>
             <nameCategory>HumanStandard</nameCategory>
-            <leatherDef>Leather_Panthera</leatherDef>
+            <leatherDef>Leather_Human</leatherDef>
             <body>OtterRiver</body>
             <baseBodySize>1.0</baseBodySize>
             <baseHealthScale>1.0</baseHealthScale>
@@ -407,6 +418,8 @@
       <li>RemoveBodyPart</li>
       <li>Euthanize</li>
       <li>Anesthetize</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
     </recipes>
   </AlienRace.ThingDef_AlienRace>
 </Defs>

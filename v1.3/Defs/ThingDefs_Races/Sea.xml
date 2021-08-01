@@ -123,10 +123,28 @@
         </li>
       </graphicPaths>
 
-      <hairSettings>
-        <hasHair>false</hasHair>
-        <getsGreyAt>100</getsGreyAt>
-      </hairSettings>
+      <styleSettings>
+        <li>
+            <key>BeardDef</key>
+            <value>
+                <hasStyle>true</hasStyle>
+                <styleTags>
+                    <li>BeardRural</li>
+                </styleTags>
+            </value>
+        </li>
+        <li>
+            <key>HairDef</key>
+            <value>
+                <hasStyle>false</hasStyle>
+                <styleTags>
+                    <li>NoHair</li>
+                </styleTags>
+            </value>
+        </li>
+    </styleSettings>
+
+
 
       <!-- ================ Thoughts ========================== -->
    <thoughtSettings>
@@ -299,7 +317,7 @@
             <makesFootprints>true</makesFootprints>
             <lifeExpectancy>90</lifeExpectancy>
             <nameCategory>HumanStandard</nameCategory>
-            <leatherDef>Leather_Panthera</leatherDef>
+            <leatherDef>Leather_Human</leatherDef>
             <body>OtterSea</body>
             <baseBodySize>1.0</baseBodySize>
             <baseHealthScale>1.0</baseHealthScale>
@@ -392,6 +410,8 @@
       <li>RemoveBodyPart</li>
       <li>Euthanize</li>
       <li>Anesthetize</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
     </recipes>
   </AlienRace.ThingDef_AlienRace>
 </Defs>

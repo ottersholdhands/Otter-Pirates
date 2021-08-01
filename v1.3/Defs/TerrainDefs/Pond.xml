@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--Pond FreshWater -->
+	<!-- Lake -->
 	
 	<TerrainDef ParentName="WaterShallowBase">
 		<defName>Pond</defName>
@@ -25,22 +25,15 @@
 				<li>Heavy</li>
 				<li>GrowSoil</li>
 				<li>Diggable</li>
-		<li>BiomesCore_FreshWater_Bridgeable</li> 
+		<!-- <li>BiomesCore_FreshWater_Bridgeable</li> -->
 		</affordances>
 		<filthAcceptanceMask>
 			<li>None</li>
 		  </filthAcceptanceMask>
-		  <tags>
-			<!-- Support for Thanks For All The Fish -->
-			<li>Fishable</li>
-			<!--Define water as salty.-->
-			 <li>SaltWater</li> 
-			<!--<li>FreshWater</li>-->
-		</tags>
 	</TerrainDef>
 
 
-	<!-- Remove Pond-->
+	<!-- Lake -->
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>Removepond</defName>
 		<label>soil</label>

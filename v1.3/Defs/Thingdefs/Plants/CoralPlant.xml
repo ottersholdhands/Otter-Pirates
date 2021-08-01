@@ -25,16 +25,10 @@
 			<growDays>12</growDays>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<wildOrder>2</wildOrder>
+			<purpose>Misc</purpose>
 		  <sowTags>
 			<li>Otterponics</li>
-			<li>Decorative</li>
 		  </sowTags>
-		  <visualSizeRange>1.2~1.5</visualSizeRange>
-		  <growMinGlow>0.1</growMinGlow>
-		  <wildClusterRadius>9</wildClusterRadius>
-		  <wildClusterWeight>10</wildClusterWeight>
-		  <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
-		  <purpose>Misc</purpose>
 		</plant>
 		<altitudeLayer>Item</altitudeLayer>
 	  </ThingDef>
